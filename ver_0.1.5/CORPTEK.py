@@ -1,3 +1,6 @@
+#Этот файл необходим для компилирования .exe файла. 
+#Этот файл не запуститься в среде разработке.
+
 import tkinter as tk
 from tkinter import messagebox as msg
 from TestUtils import Utils
