@@ -4,8 +4,6 @@ import psutil
 import wmi
 #Version: 0.1.18
 
-#Windows 7 Check
-
 # Класс с методами для тестирования состояния устройства
 class Utils():
     #Конструтор
