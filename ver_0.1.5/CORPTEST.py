@@ -1,3 +1,6 @@
+#Этот файл необходим для разработки в IDE. 
+#Программа не запуститься, если скомпелировать этот файл в exe.
+
 import tkinter as tk
 from tkinter import messagebox as msg
 from TestUtils import Utils
@@ -53,7 +56,7 @@ class GUI_Widget(tk.Frame):
     def main_page(self):
         self.clear_window()
 
-        self.add_image(os.path.join(sys._MEIPASS, 'name14.png'), 215, 1080)
+        self.add_image('img/name14.png', 215, 1080)
 
         self.add_button('НАЧАТЬ ТЕСТИРОВАНИЕ', height=5, width=30, fg='white',
                                  bg='#004C99', font=('Arial', self.__size_start_test_btn, 'bold italic'),
@@ -458,5 +461,5 @@ if __name__ == '__main__':
     # Создание экземпляра класса и запуск приложения
     app = GUI_root(GUI_Widget, 'CORPTEK', '500x550', '0.1.5 beta',
                    22, 19,17, 13)
-    app.set_icon(os.path.join(sys._MEIPASS, 'image11.png'))
+    app.set_icon('img/image11.png')
     app.main()
